@@ -1,3 +1,0 @@
-C:/Users/trxo/CLionProjects/data-structure/linklist/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/trxo/CLionProjects/data-structure/linklist/cmake-build-debug/CMakeFiles/linklist.dir
-C:/Users/trxo/CLionProjects/data-structure/linklist/cmake-build-debug/CMakeFiles/edit_cache.dir

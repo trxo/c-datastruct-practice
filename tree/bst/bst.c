@@ -53,6 +53,21 @@ void inOrder(TreeNode *n){
     }
 }
 
+void preOrder(TreeNode *n){
+    if (n!=NULL){
+        printf("node data is: %d\n",n->data);
+        preOrder(n->left);
+        preOrder(n->right);
+    }
+}
+
+void postOrder(TreeNode *n){
+    if (n!=NULL){
+        postOrder(n->left);
+        postOrder(n->right);
+        printf("node data is: %d\n",n->data);
+    }
+}
 
 
 

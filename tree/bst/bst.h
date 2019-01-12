@@ -21,6 +21,8 @@ Tree* NewTree();
 TreeNode* NewNode(ElementType data);
 void insert(Tree *t, ElementType data);
 void inOrder(TreeNode *n);
+void preOrder(TreeNode *n);
+void postOrder(TreeNode *n);
 
 
 #endif //BST_BST_H

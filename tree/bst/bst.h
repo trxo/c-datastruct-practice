@@ -17,12 +17,14 @@ typedef struct {
     TreeNode *root;
 } Tree;
 
-Tree* NewTree();
-TreeNode* NewNode(ElementType data);
-void insert(Tree *t, ElementType data);
-void inOrder(TreeNode *n);
-void preOrder(TreeNode *n);
-void postOrder(TreeNode *n);
+Tree* NewTree();    // 初始化
+TreeNode* NewNode(ElementType data);    // 初始化一个新节点
+void insert(Tree *t, ElementType data);  // 插入
+void inOrder(TreeNode *n);     // 中序遍历
+void preOrder(TreeNode *n);     // 前序遍历
+void postOrder(TreeNode *n);    // 后序遍历
+ElementType getMin(Tree *t);  // 获取最小值
+ElementType getMax(Tree *t); // 获取最大值
 
 
 #endif //BST_BST_H

@@ -69,6 +69,21 @@ void postOrder(TreeNode *n){
     }
 }
 
+ElementType getMin(Tree *t){
+    TreeNode *currentPtr = t->root;
+    while (currentPtr->left != NULL){
+        currentPtr = currentPtr->left;
+    }
+    return currentPtr->data;
+}
+
+ElementType getMax(Tree *t){
+    TreeNode *currentPtr = t->root;
+    while (currentPtr->right != NULL) {
+        currentPtr = currentPtr->right;
+    }
+    return currentPtr->data;
+}
 
 
 

@@ -57,6 +57,18 @@ void del(LinkList *l,ElementType e)
     }
 }
 
+bool search(LinkList *l,ElementType e)
+{
+    Node *currentPtr = l->head;
+    while (currentPtr != NULL){
+        if(currentPtr->element == e){
+            return true;
+        }
+        currentPtr = currentPtr->next;
+    }
+    return false;
+}
+
 
 void printLinkList(LinkList *l){
     Node *ptr = l->head;

@@ -84,7 +84,19 @@ ElementType getMax(Tree *t){
     }
     return currentPtr->data;
 }
-
+TreeNode* find(Tree *t,ElementType data)
+{
+    TreeNode *currentPtr = t->root;
+    while (currentPtr != NULL) {
+        if (currentPtr->data == data){
+            return currentPtr;
+        } else if (data < currentPtr->data){
+            currentPtr = currentPtr->left;
+        } else {
+            currentPtr = currentPtr->right;
+        }
+    }
+}
 
 
 int main() {

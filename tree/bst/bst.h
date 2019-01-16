@@ -23,6 +23,7 @@ void insert(Tree *t, ElementType data);  // 插入
 void inOrder(TreeNode *n);     // 中序遍历
 void preOrder(TreeNode *n);     // 前序遍历
 void postOrder(TreeNode *n);    // 后序遍历
+TreeNode* find(Tree *t,ElementType data);
 ElementType getMin(Tree *t);  // 获取最小值
 ElementType getMax(Tree *t); // 获取最大值
 
